@@ -1,24 +1,24 @@
 % function [ttest,ind ] = ag_controle()
 
 %Definicoes
-% POP_SIZE        = 200;
-% N_GERACOES      = 100;
-% TX_MUTACAO      = 0.4;
+ POP_SIZE        = 200;
+ N_GERACOES      = 100;
+ TX_MUTACAO      = 0.4;
 
 
 %Gera a população inicial
-%individuos = ag_gera_pop(POP_SIZE);
+individuos = ag_gera_pop(POP_SIZE);
 
 %Armazena erro mínimo
-%min_v = [];
+min_v = [];
 %Armazena erro médio
-%med_v = [];
-%influ = [];
-%influ_act = 0;
+med_v = [];
+influ = [];
+influ_act = 0;
 % Executa as gerações
-%val = 1;
-%fitness = zeros(1, POP_SIZE);
-load('work');
+val = 1;
+fitness = zeros(1, POP_SIZE);
+%load('work');
 for i = 1 : N_GERACOES
     if (i>1)
         val = POP_SIZE/2;

@@ -1,8 +1,8 @@
-%function [ttest,ind ] = ag_controle()
+function [ttest,ind ] = ag_controle()
 
 %Definicoes
- POP_SIZE        = 200;
- N_GERACOES      = 100;
+ POP_SIZE        = 20;
+ N_GERACOES      = 1;
  TX_MUTACAO      = 0.4;
 
 
@@ -66,4 +66,4 @@ ind = individuos{1};
 ttest =min(fitness);
 
 
-%end
+end

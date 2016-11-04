@@ -1,7 +1,7 @@
 clear all
 clc
 
-load('workWaveSemAgua.mat');
+load('workWaveComAgua.mat');
 
 bp2 = [];
 bp4 = [];
